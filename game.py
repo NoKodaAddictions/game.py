@@ -3,8 +3,8 @@ from termcolor import colored
 import random
 from sys import exit
 
-height = 5
-width = 5
+height = 10
+width = 10
 points = 0
 coinrange = 5
 rounds = 1
@@ -151,6 +151,8 @@ Coins Gathered: {points}
                     hit = True
         
         for coin in coins:
+            print(coin)
+            print(coordinates)
             if coordinates[0] == coin[0]:
                 if coordinates[1] == coin[1]:
                     coins.remove(coin)
